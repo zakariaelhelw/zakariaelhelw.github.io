@@ -1,0 +1,95 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #2E3B36;
+    color: #F0F2E6
+}
+
+/* Wrapper to center the whole website on screen */
+.site-wrapper {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+/* --- HEADER SECTION --- */
+.top-header {
+    /* This pushes the NAME over so it sits above the content, not the nav */
+    /* 180px (sidebar width) + 20px (gap) + 20px (extra spacing) */
+    padding-left: 220px; 
+    margin-bottom: 0px; /* Space between Name and the start of the line */
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: normal;
+    margin: 0;
+    line-height: 1;
+}
+
+/* --- BODY SECTION (Flexbox) --- */
+.main-body {
+    display: flex;
+    min-height: 60vh; /* Ensures the line extends down a bit */
+}
+
+/* Left Column (Sidebar) */
+.sidebar {
+    width: 180px; /* Fixed width */
+    border-right: 2px solid #F0F2E6; /* The Vertical Line */
+    padding-right: 20px;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0; /* Aligns top link with top summary text */
+}
+
+.sidebar li {
+    margin-bottom: 8px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #F0F2E6;
+    font-size: 1.1rem;
+    transition: opacity 0.2s;
+}
+
+.sidebar a:hover {
+    opacity: 0.7;
+    color: #FFFFFF;
+}
+
+.sidebar .active {
+    font-weight: bold;
+}
+
+/* Right Column (Content) */
+.content {
+    flex-grow: 1;
+    padding-left: 20px;
+}
+
+.summary-text p {
+    font-size: 1.2rem;
+    margin-top: 0; /* Aligns text with the top of the nav links */
+}
+
+.content a {
+    color: #D4AF37;         /* Antique Brass */
+    text-decoration: none;  /* Remove the underline */
+    font-weight: bold;      /* Helps distinctiveness since underline is gone */
+    transition: color 0.2s;
+}
+
+
+/* "Clicked on" (Visited) links become the primary text color */
+.content a:visited {
+    color: #F0F2E6;         /* Blends back in with the normal text */
+}
