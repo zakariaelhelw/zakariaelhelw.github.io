@@ -102,7 +102,7 @@ h1 {
 
 .gallery-item {
   margin: 0;
-  background: #fff;
+  background: #f0f2e6;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -128,7 +128,7 @@ figcaption {
   font-weight: bold;
   font-size: 1.1rem;
   margin: 0 0 5px 0;
-  color: #333;
+  color: #2E3B36;
 }
 
 .event-meta {
